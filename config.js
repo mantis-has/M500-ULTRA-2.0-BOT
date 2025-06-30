@@ -41,9 +41,9 @@ global.baileys = 'V 6.7.8'
 global.vs = '2.0.0'
 global.languaje = 'Español'
 global.nameqr = 'Makima - 2.0 - Bot'
-global.sessions = 'MakiSession'
-global.jadi = 'MakiJadiBot'
-global.blackJadibts = true
+global.sessions = 'Session'
+global.jadi = 'JadiBot'
+global.makiJadibts = true
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
