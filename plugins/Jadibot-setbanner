@@ -1,0 +1,41 @@
+import fs from 'fs'
+import path from 'path'
+
+const handler = async (m, { text, usedPrefix, command }) => {
+  const senderNumber = m.sender.replace(/[^0-9]/g, '')
+  const botPath = path.join('./JadiBots', senderNumber)
+  const configPath = path.join(botPath, 'config.json')
+
+  // Valida si se manda un link de imagen
+  const urlRegex = /(https?:\/\/[^\s]+(\.jpg|\.jpeg|\.png|\.webp))/i
+  const match = text.match(urlRegex)
+  if (!match) {
+    return m.reply(`「🩵」Formato incorrecto.\n\n> Debes ingresar el link de la foto para actualizar el banner.`)
+  }
+
+  if (!fs.existsSync(botPath)) {
+    return m.reply('「🩵」Este comando solo puede ser usado por los sockets.')
+  }
+
+  const bannerURL = match[1]
+
+  try {
+    const config = fs.existsSync(configPath)
+      ? JSON.parse(fs.readFileSync(configPath))
+      : {}
+
+    config.banner = bannerURL
+
+    fs.writeFileSync(configPath, JSON.stringify(config, null, 2))
+    m.reply(`「🩵」 Banner guardado correctamente con:\n${bannerURL}`)
+  } catch (e) {
+    console.error(e)
+    m.reply('「🩵」 No se pudo guardar el banner.')
+  }
+}
+
+handler.help = ['setbanner']
+handler.tags= ['serbot']
+handler.command = /^setbanner$/i
+handler.owner = false
+export default handler
