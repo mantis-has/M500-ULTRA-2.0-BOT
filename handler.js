@@ -538,8 +538,8 @@ const msg = {
   owner:  '「🩵」Este comando solo puede ser usado por mis desarrolladores.*',
   premium: '「🩵」 Este comando solo puede ser usado por los usuarios premiums.*',
   private: '「🩵」Este comando solo puede ser usado en chats privados.*',
-  admin: '「🩵」Este comando solo puede ser usado por admins.*',
-  botAdmin: '「🩵」Para usar este comando, debo ser admin del grupo.*',
+  admin: '「🩵」Este comando solo puede ser usado por admins.',
+  botAdmin: '「🩵」Para usar este comando, debo ser admin del grupo.',
   unreg: '「🩵」¡Hey! no estas registrado, registrate para usar mis comandos\n\n/Reg nombre.edad\n\n! Ejemplo: _/Reg Félix.14_',
   restrict: '「🩵」Este comando fue desactivado por mi Creador\n\> Félix Manuel.'
 }[type];
