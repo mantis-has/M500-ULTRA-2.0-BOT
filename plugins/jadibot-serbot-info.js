@@ -33,7 +33,7 @@ async function handler(m, { conn: stars }) {
       ? "Prem-Bot"
       : "SubBot"
     return `• ${nombre} (${tipo})`
-  }).join('\n') || 'En este grupo no hay Bots activos'
+  }).join('\n') || 'Solo está la sesión principal activa aquí.'
 
   let responseMessage = 
 `LISTA DE BOTS ACTIVOS
@@ -43,6 +43,7 @@ Prem-Bots: ${prembots.length}
 Subbots: ${subbots.length}
 
 En este grupo:
+
 ${listaBotsGrupo}
 `
 
