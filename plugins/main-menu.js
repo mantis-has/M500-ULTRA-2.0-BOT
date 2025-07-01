@@ -401,7 +401,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 
 handler.help = ['menu', 'setbanner', 'setname'];
 handler.tags = ['main'];
-handler.command = ['menu', 'help', 'menú', 'asistenciabot', 'comandosbot', 'listadecomandos', 'menucompleto', 'setbasnner', 'sestname'];
+handler.command = ['menu', 'help', 'menú', 'asistenciabot', 'comandosbot', 'listadecomandos', 'menucompleto', 'setbanner', 'setname'];
 handler.register = true;
 
 function clockString(ms) {
