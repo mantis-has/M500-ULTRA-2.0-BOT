@@ -1,6 +1,6 @@
 {
-"name": "Black-clover-MD",
-"version": "4.1.0",
+"name": "Makima-MD",
+"version": "2.0.1",
 "description": "El mejor bot ",
 "main": "index.js",
 "type": "module",
@@ -16,16 +16,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/thecarlos19/black-clover-MD",
+"homepage": "https://github.com/mantis-has/Makima",
 "author": {
-"name": "thecarlos19"
+"name": "Félix"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/thecarlos19/black-clover-MD.git"
+"url": "git+https://github.com/mantis-has/Makima.git"
 },
 "bugs": {
-"url": "https://github.com/thecarlos19/black-clover-MD/issues"
+"url": "https://github.com/mantis-has/Makima/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
