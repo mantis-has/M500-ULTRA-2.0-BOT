@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let speed = neww - old;
 
   // Mensaje principal
-  let blackclover= `
+  let makimabot= `
 ╭━━━━◇◇◇━━━━⬣
 ┃ ESTADO DE LA BOT 
 ┃ MAKIMA 2.0 BOT
@@ -50,7 +50,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 🩵 *Velocidad:* ${(speed * 1000).toFixed(0) / 1000}s
 `.trim();
 
-  await conn.sendFile(m.chat, pp, 'estado.jpg', blackclover, fkontak, null, rcanal);
+  await conn.sendFile(m.chat, pp, 'estado.jpg', makimabot, fkontak, null, rcanal);
 };
 
 handler.help = ['status'];
