@@ -1,6 +1,6 @@
-/*Codigo hecho por SoyMaycol
---> GitHub: SoySapo6
---> Aviso: Este codigo usa mi api */
+/*Codigo creado por Félix Manuel 
+mantis-has/Makima
+Este codigo usa la API de SoySapo6 */
 
 import { sticker } from '../lib/sticker.js'
 import axios from 'axios'
