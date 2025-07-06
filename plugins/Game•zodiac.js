@@ -41,7 +41,7 @@ let handler = async (m, { conn, text }) => {
         text = m.quoted.text
     } else if (!text) {
         return conn.sendMessage(m.chat, {
-            text: `❀ Por favor, responde a un mensaje o ingresa un texto para crear el Sticker.`,
+            text: `「🩵」 Responde a un mensaje o ingresa un texto para crear el Sticker estilo blanco.`,
         }, { quoted: m })
     }
 
@@ -57,11 +57,11 @@ let handler = async (m, { conn, text }) => {
         if (stiker) {
             return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
         } else {
-            throw new Error("✧ No se pudo generar el sticker.")
+            throw new Error("🩵 No se pudo generar el sticker.")
         }
     } catch (error) {
         return conn.sendMessage(m.chat, {
-            text: `⚠︎ Ocurrió un error: ${error.message}`,
+            text: `🩵 Ocurrió un error: ${error.message}`,
         }, { quoted: m })
     }
 }
