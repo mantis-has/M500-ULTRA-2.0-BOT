@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     try {
-        if (!args[0]) return m.reply(`𝙻𝚘 𝚊𝚗𝚍𝚊𝚜 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘 𝚖𝚊𝚕 𝚝𝚎 𝚐𝚞𝚒𝚊𝚛𝚎 ${usedPrefix + command} <ᴀɴɪᴍᴇɪᴅ, ᴘᴀʀᴀ ᴄᴏɴꜱᴜʟᴛᴀʀ ᴇʟ ɪᴅ ᴅᴇʟ ᴀɴɪᴍᴇ ᴜꜱᴀ .ᴀɴɪᴍᴇꜰʟᴠꜱᴇᴀʀᴄʜ> <ᴄᴀᴘɪᴛᴜʟᴏ>\n .animedl to-love-ru-ova 1`);
+        if (!args[0]) return m.reply(`Uso incorrecto. Verdadero uso: ${usedPrefix + command} <animeid, para consultar el id del anime anime usa; #animeflvsearch> <capitulo>\n .animedl to-love-ru-ova 1`);
         const animeId = args[0];
         const episode = args[1] || 1;
         const apiUrl = `https://animeflvapi.vercel.app/download/anime/${animeId}/${episode}`;
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
         const file = File.fromURL(megaLink);
         await file.loadAttributes();
         if (file.size >= 300000000) return m.reply('Error: El archivo es grande (Máximo tamaño: 300MB)');
-        await conn.loadingMsg(m.chat, '⚔️ 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝘼𝙉𝙄𝙈𝙀 \n ᴛᴇɴɢᴀ ᴇɴ ᴄᴜᴇɴᴛᴀ Qᴜᴇ ᴇʟ ᴠɪᴅᴇᴏ ᴅᴇ ʟᴏꜱ ᴀɴɪᴍᴇꜱ ᴇɴ ᴇꜱᴛʀᴇɴᴏ ꜱᴜ ᴠɪᴅᴇᴏ ꜱᴏʟᴏ ᴅᴜʀᴀ 3 ᴅɪᴀꜱ ᴅᴇɴᴛʀᴏ ᴅᴇ ʟᴀ ɴᴜʙᴇ ꜱᴇᴀ ʀᴀᴘɪᴅᴏ', `✅ ᴍᴀɴᴅᴀɴᴅᴏ ᴀʀᴄʜɪᴠᴏ`, [
+        await conn.loadingMsg(m.chat, '🩵 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝘼𝙉𝙄𝙈𝙀 \n ᴛᴇɴɢᴀ ᴇɴ ᴄᴜᴇɴᴛᴀ Qᴜᴇ ᴇʟ ᴠɪᴅᴇᴏ ᴅᴇ ʟᴏꜱ ᴀɴɪᴍᴇꜱ ᴇɴ ᴇꜱᴛʀᴇɴᴏ ꜱᴜ ᴠɪᴅᴇᴏ ꜱᴏʟᴏ ᴅᴜʀᴀ 3 ᴅɪᴀꜱ ᴅᴇɴᴛʀᴏ ᴅᴇ ʟᴀ ɴᴜʙᴇ ꜱᴇᴀ ʀᴀᴘɪᴅᴏ', `✅ ᴍᴀɴᴅᴀɴᴅᴏ ᴀʀᴄʜɪᴠᴏ`, [
             "▰▱▱▱▱ ᴄᴀʀɢᴀɴᴅᴏ ...",
             "▰▰▱▱▱ ᴄᴀʀɢᴀɴᴅᴏ ...",
             "▰▰▰▱▱ ᴄᴀʀɢᴀɴᴅᴏ ...",
