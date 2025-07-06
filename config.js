@@ -47,7 +47,7 @@ global.makiJadibts = true
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
-global.packsticker = `♾━━━━━━━━♾\nBot: Makima 2.0\n\n|Creador: Felix Manuel♾━━━━━━━━♾\n`
+global.packsticker = `Bot: Makima 2.0\n\n|Creador: Felix Manuel\n\nUsuarios: 10927\n\n`
 global.packname = `🩵 Makima 2.0 Bot 🩵`
 global.author = `Stickers Makima`;
 global.wm = '⏤͟͞ू⃪  ̸̷͢𝐌a͟𝐤i͟𝐦a͟ 2.0 𝐁𖹭t͟𑁯ᰍ';
