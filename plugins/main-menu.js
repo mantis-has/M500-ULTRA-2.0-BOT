@@ -21,10 +21,6 @@ let handler = async (m, { conn, args }) => {
   let imgUrl = images[Math.floor(Math.random() * images.length)]  
 
   let txt = `
-┏━━━━━━━━━━━━━━━┓
-┃ 𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓     
-┗━━━━━━━━━━━━━━━┛
-
 ¡𝐇𝐨𝐥𝐚! ${name} 𝐒𝐨𝐲 𝐌500-𝐔𝐥𝐭𝐫𝐚-𝐁𝐨𝐭 ${(conn.user.jid == global.conn.user.jid ? '💎 `OficialBot`' : '💎 `(Sub-Bot`')}
 
 ╔━━ INFO-BOT ━━━━╗
