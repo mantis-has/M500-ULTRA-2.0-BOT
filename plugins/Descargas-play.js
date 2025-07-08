@@ -15,33 +15,20 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       throw '❌ No se encontraron resultados. Intenta con otro título.';
     }
 
-    const body = `*┏━━━━━━━━━━━━━━━━━⬣*
-*┃ 💎 MAKIMA - PLAY 💎*
-*┗━━━━━━━━━━━━━━━━━⬣*
-
-🩵 *TÍTULO:* 
-» ${videoInfo.title}
-
-🩵 *CANAL:* 
-» ${videoInfo.author.name}
-
-🩵 *DURACIÓN:* 
-» ${videoInfo.timestamp}
-
-🩵 *PUBLICADO:* 
-» ${videoInfo.ago}
-
-🩵 *VISTAS:* 
-» ${videoInfo.views.toLocaleString()} 
-
-> 💎 *Selecciona una opción para descargar:*`;
+    const body = `╭─╮︹︹⊹︹︹⊹︹︹⊹︹︹
+> Titulo: ${videoInfo.title}
+> Canal: ${videoInfo.author.name}
+> Duración: ${videoInfo.timestamp}
+> Publicado: ${videoInfo.ago}
+> Vistas: ${videoInfo.views.toLocaleString()} 
+╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝`;
 
     await conn.sendMessage(
       m.chat,
       {
         image: { url: videoInfo.thumbnail },
         caption: body,
-        footer: '🩷 ᴍᴀᴋɪᴍᴀ ʙᴏᴛ ✨| ᴘʟᴀʏ',
+        footer: 'Selecciona para descargar',
         buttons: [
           { buttonId: `.ytmp3 ${videoInfo.url}`, buttonText: { displayText: 'ᴀᴜᴅɪᴏ' } },
           { buttonId: `.play2 ${videoInfo.url}`, buttonText: { displayText: 'ᴠɪᴅᴇᴏ' } },
