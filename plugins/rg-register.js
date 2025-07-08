@@ -42,32 +42,29 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
     }
     
     let sn = createHash('md5').update(m.sender).digest('hex')
-    let regbot = `┏━━━━━━━━━━━━━━━━
-┃ *USUARIO REGISTRADO*
-┗━━━━━━━━━━━━━━━━\n`
+    let regbot = `╭─╮︹︹⊹︹︹⊹︹︹⊹︹︹╭─╮
+𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢 - 𝗠500 𝗨𝗟𝗧𝗥𝗔
+╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝
 
-regbot += `╭───────────────╮\n`
-regbot += `│ *👤 Nombre:* ${name}\n`
-regbot += `│ *🎂 Edad:* ${age} años\n`
-regbot += `╰───────────────╯\n`
+𝐍𝐨𝐦𝐛𝐫𝐞: ${name}
+𝐄𝐝𝐚𝐝: ${age} años
+╰━─━─━─≪≪✠≫≫─━─━─━╯
 
-regbot += `───────────────\n`
-regbot += `*🎁 𝗥𝗘𝗖𝗢𝗠𝗣𝗘𝗡𝗦𝗔𝗦:*\n`
-regbot += `= 15 Estrellas\n`
-regbot += `= 5 ${moneda}\n`
-regbot += `= 245 Experiencia\n`
-regbot += `= 12 Tokens\n`
+「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀
 
-regbot += `───────────────\n`
-regbot += `💎 Usa *#perfil* para ver tu información detallada.\n`
-regbot += `┗━━━━━━━━━━━━━━━━━━`
+5 *Exp*
+14 *Coins*
+245 *Tokens*
+
+→ Usa *#profile* para ver tu perfil.
+`
 
   await conn.sendMessage(m.chat, {
         text: regbot,
         contextInfo: {
             externalAdReply: {
-                title: '⊱『🩵𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥🔥』⊰',
-                thumbnailUrl: 'https://files.catbox.moe/445fzg.jpg',
+                title: '⊱『𝗡𝗨𝗘𝗩𝗢 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗢』⊰',
+                thumbnailUrl: 'https://qu.ax/pJCKB.jpg',
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
