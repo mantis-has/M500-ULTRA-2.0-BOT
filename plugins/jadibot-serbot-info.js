@@ -33,7 +33,7 @@ async function handler(m, { conn: stars }) {
       ? "Prem-Bot"
       : "SubBot"
     return `• ${nombre} (${tipo})`
-  }).join('\n') || 'Solo está la sesión principal activa aquí.'
+  }).join('\n') || 'Solo están estás sesiones activas.'
 
   let responseMessage = 
 `LISTA DE BOTS ACTIVOS
@@ -44,6 +44,8 @@ Subbots: ${subbots.length}
 
 En este grupo:
 
+MAKIMA PROYECT (OficialBot)
+Makima Bot (Prem-Bot)
 ${listaBotsGrupo}
 `
 
