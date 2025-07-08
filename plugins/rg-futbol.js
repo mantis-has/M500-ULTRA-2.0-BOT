@@ -15,7 +15,7 @@ const jugadores = [
   { nombre: "Ronaldo", valor: 100, url: "https://qu.ax/jDVGs.jpg" }
 ];
 
-const channelRD = { id: "120363400360651198@newsletter", name: "MAKIMA - FRASES" };
+const channelRD = { id: "120363400360651198@newsletter", name: "💎 Frases y más💎" };
 const MAKIMA_ICON = "https://qu.ax/pJCKB.jpg";
 const GITHUB_MAKIMA = "https://github.com/mantis-has/Makima";
 const NEWSLETTER_TITLE = 'M500 ULTRA BOT';
