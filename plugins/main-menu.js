@@ -268,8 +268,8 @@ let handler = async (m, { conn, args }) => {
       },  
       forwardingScore: 999,  
       externalAdReply: {  
-        title: 'Sukuna Bot MD',  
-        body: 'Sistema oficial desarrollado por Black',
+        title: 'M500 ULTRA BOT',  
+        body: 'Powered by Félix',
         thumbnailUrl: imgUrl,  
         sourceUrl: redes,  
         mediaType: 1,  
