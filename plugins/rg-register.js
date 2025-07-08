@@ -44,10 +44,9 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
     let sn = createHash('md5').update(m.sender).digest('hex')
     let regbot = `╭─╮︹︹⊹︹︹⊹︹︹⊹︹︹╭─╮
 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢 - 𝗠500 𝗨𝗟𝗧𝗥𝗔
-╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝
-
-𝐍𝐨𝐦𝐛𝐫𝐞: ${name}
-𝐄𝐝𝐚𝐝: ${age} años
+╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▭╝
+┃𝐍𝐨𝐦𝐛𝐫𝐞: ${name}
+┃𝐄𝐝𝐚𝐝: ${age} años
 ╰━─━─━─≪≪✠≫≫─━─━─━╯
 
 「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀
@@ -56,7 +55,7 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
 14 *Coins*
 245 *Tokens*
 
-→ Usa *#profile* para ver tu perfil.
+> Usa *#profile* para ver tu perfil.
 `
 
   await conn.sendMessage(m.chat, {
