@@ -2,10 +2,10 @@
 // Codigo creado por Félix Manuel (github.com/mantis-has) para sistema Makima MD
 
 const channelRD = {
-  id: "120363400360651198@newsletter", // Cambia por tu canal si quieres
-  name: "MAKIMA - CHANNEL"
+  id: "120363418804796632@newsletter", // Cambia por tu canal si quieres
+  name: "🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Bot⋆͙̈么͟͞──"
 }
-const thumbnailUrl = 'https://qu.ax/dXOUo.jpg' // Imagen cuadrada y pequeña
+const thumbnailUrl = 'https://qu.ax/EUstl.jpg' // Imagen cuadrada y pequeña
 
 async function handler(m, { conn: stars }) {
   let uniqueUsers = new Map()
@@ -33,7 +33,7 @@ async function handler(m, { conn: stars }) {
       ? "Prem-Bot"
       : "SubBot"
     return `• ${nombre} (${tipo})`
-  }).join('\n') || 'Solo están estás sesiones activas.'
+  }).join('\n') || 'No identificado.'
 
   let responseMessage = 
 `LISTA DE BOTS ACTIVOS
@@ -44,8 +44,6 @@ Subbots: ${subbots.length}
 
 En este grupo:
 
-• Makima (OficialBot)
-• Sin Nombre (Prem-Bot)
 ${listaBotsGrupo}
 `
 
