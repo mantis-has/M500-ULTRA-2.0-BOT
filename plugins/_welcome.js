@@ -2,8 +2,8 @@ import { WAMessageStubType } from '@whiskeysockets/baileys'
 import fetch from 'node-fetch'
 
 const channelRD = {
-  id: "120363400360651198@newsletter", // Cambia por tu canal si quieres
-  name: "MAKIMA - CHANNEL"
+  id: "120363418804796632@newsletter", // Cambia por tu canal si quieres
+  name: "🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬𝐂h҉a҉n҉n̸e҉l҉⋆͙̈么͟͞──"
 };
 
 export async function before(m, { conn, participants, groupMetadata }) {
@@ -16,7 +16,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   const jid = m.messageStubParameters[0]
   const user = `@${jid.split('@')[0]}`
-  const thumbnailUrl = 'https://qu.ax/dXOUo.jpg'
+  const thumbnailUrl = 'https://qu.ax/EUstl.jpg'
   const pp = await conn.profilePictureUrl(jid, 'image').catch(() => thumbnailUrl)
   const img = await fetch(pp).then(r => r.buffer())
   const total = [28, 32].includes(m.messageStubType)
@@ -34,7 +34,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     },
     externalAdReply: {
       title: channelRD.name,
-      body: 'MAKIMA 2.0 BOT',
+      body: '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Bot⋆͙̈么͟͞──',
       thumbnailUrl: thumbnailUrl,
       mediaType: 1,
       renderLargerThumbnail: false,
