@@ -42,25 +42,25 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
     }
     
     let sn = createHash('md5').update(m.sender).digest('hex')
-    let regbot = `┏━━━━━━━━━━━━━━━━🩵
-┃ *🩵 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗢 - Mákima Bot 🩵*
-┗━━━━━━━━━━━━━━━━🩵\n`
+    let regbot = `┏━━━━━━━━━━━━━━━━
+┃ *USUARIO REGISTRADO*
+┗━━━━━━━━━━━━━━━━\n`
 
 regbot += `╭───────────────╮\n`
 regbot += `│ *👤 Nombre:* ${name}\n`
 regbot += `│ *🎂 Edad:* ${age} años\n`
 regbot += `╰───────────────╯\n`
 
-regbot += `💠───────────────💠\n`
+regbot += `───────────────\n`
 regbot += `*🎁 𝗥𝗘𝗖𝗢𝗠𝗣𝗘𝗡𝗦𝗔𝗦:*\n`
-regbot += `= 🩵 15 Estrellas ✨\n`
-regbot += `= 🩵 5 MakimaCoins 💠\n`
-regbot += `= 🩵 245 Experiencia 📈\n`
-regbot += `=🩵 12 Tokens 💰\n`
+regbot += `= 15 Estrellas\n`
+regbot += `= 5 ${moneda}\n`
+regbot += `= 245 Experiencia\n`
+regbot += `= 12 Tokens\n`
 
-regbot += `💠───────────────💠\n`
-regbot += `📘 Usa *#perfil* para ver tu información detallada.\n`
-regbot += `┗━━━━━━━━━━━━━━━━━━🩵`
+regbot += `───────────────\n`
+regbot += `💎 Usa *#perfil* para ver tu información detallada.\n`
+regbot += `┗━━━━━━━━━━━━━━━━━━`
 
   await conn.sendMessage(m.chat, {
         text: regbot,
