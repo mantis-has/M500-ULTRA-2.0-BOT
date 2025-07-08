@@ -2,12 +2,12 @@
 import fetch from 'node-fetch'
 import db from '../lib/database.js'
 
-const img = 'https://qu.ax/dXOUo.jpg'
+const img = 'https://qu.ax/EUstl.jpg'
 
 // Canal info (personaliza aquí)
 const canalName = 'ECONOMIA DEL USUARIO'
-const canalDesc = 'MAKIMA 2.0 CHANNEL'
-const canalUrl = 'https://whatsapp.com/channel/120363400360651198'
+const canalDesc = '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Bot⋆͙̈么͟͞──'
+const canalUrl = 'https://whatsapp.com/channel/120363418804796632'
 const dev = 'Félix Manuel'
 
 function obtenerRango(level) {
@@ -58,7 +58,7 @@ let handler = async (m, { conn }) => {
     contextInfo: {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: "120363400360651198@newsletter", // ID de tu canal
+        newsletterJid: "120363418804796632@newsletter", // ID de tu canal
         newsletterName: canalName,
         serverMessageId: -1,
       },
