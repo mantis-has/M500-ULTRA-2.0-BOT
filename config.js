@@ -40,28 +40,28 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.8'
 global.vs = '2.0.0'
 global.languaje = 'Español'
-global.nameqr = 'Makima - 2.0 - Bot'
+global.nameqr = 'M500-ULTRA-BOT'
 global.sessions = 'Session'
 global.jadi = 'JadiBot'
 global.makiJadibts = true
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
-global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: Makima 2.0\n\nCreador: Felix Manuel\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
-global.packname = `🩵 Makima 2.0 Bot 🩵`
-global.author = `Stickers Makima`;
+global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: M500 ULTRA\n\nCreador: Felix Manuel\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
+global.packname = `🩵 M500 ULTRA BOT 🩵`
+global.author = `Stickers M500 Ultra`;
 global.wm = '⏤͟͞ू⃪  ̸̷͢𝐌a͟𝐤i͟𝐦a͟ 2.0 𝐁𖹭t͟𑁯ᰍ';
-global.titulowm = '⏤͟͞ू⃪  ̸̷͢𝐌a͟𝐤i͟𝐦a͟ 2.0 𝐁𖹭t͟𑁯ᰍ';
+global.titulowm = '⏤͟͞ू⃪M500 2.0 𝐁𖹭t͟𑁯ᰍ';
 global.igfg = '𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪'
-global.botname = 'Makima 2.0 Bot'
+global.botname = 'M500 2.0 Ultra Bot'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Félix Manuel'
-global.textbot = 'MakimaV2 : Félix Manuel'
-global.gt = '͟͞MAkima';
-global.namechannel = '⏤͟͞ू⃪  ̸̷͢𝐌a͟𝐤i͟𝐦a͟ 𝐂𝐡a͟𝐧n͟e͟𝐥𑁯'
+global.textbot = 'M500V2 : Félix Manuel'
+global.gt = '͟͞M500';
+global.namechannel = '𝐌500 𝐂𝐡a͟𝐧n͟e͟𝐥𑁯'
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
-global.moneda = 'MakiCoins'
+global.moneda = 'M500Coins'
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺  𝑫𝑬𝒀𝑴𝑶𝑶𝑵 𝑪𝑳𝑼𝑩◞ • 🩵
 global.gp4 = 'https://chat.whatsapp.com/KoJjHo6o3Ew7P5qkjaIh0r' //Grupo Oficial De Makima 
