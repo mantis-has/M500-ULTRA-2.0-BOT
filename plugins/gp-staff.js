@@ -11,7 +11,7 @@ let text = `
 ▢ ${listAdmin}
 └───────────
 `.trim()
-conn.sendFile(m.chat, pp, 'staff.png', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
+conn.sendFile(m.chat, pp, 'https://qu.ax/pJCKB.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.help = ['staff']
 handler.tags = ['group']
