@@ -44,8 +44,8 @@ Subbots: ${subbots.length}
 
 En este grupo:
 
-MAKIMA PROYECT (OficialBot)
-Makima Bot (Prem-Bot)
+• Makima (OficialBot)
+• Sin Nombre (Prem-Bot)
 ${listaBotsGrupo}
 `
 
