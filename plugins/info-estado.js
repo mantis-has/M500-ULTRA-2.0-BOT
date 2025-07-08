@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let totalreg = Object.keys(global.db.data.users).length;
   let totalchats = Object.keys(global.db.data.chats).length;
   let vs = global.vs || '1.0.0';
-  let pp = "https://files.catbox.moe/ed9tq4.jpg";
+  let pp = "https://qu.ax/EUstl.jpg";
 
   // Tiempo de actividad
   if (process.send) {
@@ -32,8 +32,8 @@ let handler = async (m, { conn, usedPrefix }) => {
   // Mensaje principal
   let makimabot= `
 ╭━━━━◇◇◇━━━━⬣
-┃ ESTADO DE LA BOT 
-┃ MAKIMA 2.0 BOT
+┃ ESTADO DEL
+┃ M500 ULTRA BOT
 ╰━━━━◇◇◇━━━━⬣
 
 🩵 *Creador:* Félix Manuel 
