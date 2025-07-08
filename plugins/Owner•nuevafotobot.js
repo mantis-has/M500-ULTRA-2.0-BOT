@@ -11,7 +11,7 @@ const handler = async (m, { conn }) => {
 
     await conn.sendMessage('120363400360651198@newsletter', {
       image: { url: memeUrl },
-      caption: '「🩵」 *MEME PARA TI*\n\n> Makima Bot MD',
+      caption: '「🩵」 *MEME PARA TI*\n\n> M500 ULTRA BOT',
     });
 
     m.reply('「🩵」 Meme enviado al canal con éxito...');
