@@ -39,7 +39,7 @@ async function handler(m, { conn: stars }) {
 `LISTA DE BOTS ACTIVOS
 
 principales: 1
-Prem-Bots: ${prembots.length}
+Prem-Bots: 1
 Subbots: ${subbots.length}
 
 En este grupo:
