@@ -52,9 +52,9 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       // Variables para el contexto del canal
       const dev = 'Félix Manuel';
       const redes = 'https://github.com/Andresv27728/2.0';
-      const channelRD = { id: "120363400360651198@newsletter", name: "MAKIMA - FRASES" };
+      const channelRD = { id: "120363418804796632@newsletter", name: "🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Bot⋆͙̈么͟͞──" };
       let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/mqtxvp.jpg');
+      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/EUstl.jpg');
 
       // Mensaje de "CARGANDO COMANDOS..." con contexto de canal y respondiendo al mensaje
       await conn.sendMessage(m.chat, {
@@ -358,7 +358,6 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
  ╭ֹ┈ ⵿❀⵿ ┈╮A - I
 ┃┈➤ #dalle
 ┃┈➤ #simi
-┃┈➤ #ai
 ┃┈➤ #tovideo
 ┃┈➤ #togifaud
 ╰━━━━━━━━━━━━━━━━━━
@@ -380,7 +379,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
           },
           forwardingScore: 999,
           externalAdReply: {
-            title: '𝐌A͜͡𝑲𝑖𝐌ꪖ  𝐁o͟T͎ 𝙼𝙳',
+            title: '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Bot⋆͙̈么͟͞──',
             body: dev,
             thumbnailUrl: perfil,
             sourceUrl: redes,
