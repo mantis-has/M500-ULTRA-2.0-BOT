@@ -31,8 +31,8 @@ console.log(`Error : ${e}`)
 global.creador = 'Wa.me/18293142989'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/18293142989'
-global.namechannel = '⏤͟͞ू⃪  ̸̷͢𝐌𝐚𝐤𝐢𝐦𝐚 ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ'
-global.namegrupo = '⏤͟͞ू⃪  ̸̷͢𝐌𝐚𝐤𝐢𝐦𝐚 ☦︎ 𝐆𝐫𝐮𝐩𝐨𑁯ᰍ'
+global.namechannel = '⏤͟͞ू⃪💎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Channel⋆͙̈么͟͞──'
+global.namegrupo = '⏤͟͞ू⃪  ̸̷͢𝐌500 ☦︎ 𝐆𝐫𝐮𝐩𝐨𑁯ᰍ'
 global.namecomu = 'Deymoon Club'
 global.listo = '🩵 *Aquí tienes ᕕ( ᐛ )ᕗ*'
 
@@ -96,8 +96,8 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [
-'https://qu.ax/Dfpfh.jpg',
-'https://qu.ax/bEUcE.jpg'
+'https://qu.ax/EUstl.jpg',
+'https://qu.ax/EUstl.jpg'
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: packname, body: dev, mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
