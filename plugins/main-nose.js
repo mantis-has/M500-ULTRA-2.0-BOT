@@ -47,7 +47,7 @@ let handler = async function (m, { args, command, usedPrefix, conn }) {
   // Mensaje citado
   const quotedMsg = {
     key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: m.chat, id: Math.random().toString(36).slice(2) },
-    message: { conversation: 'MAKIMA BOT MD' }
+    message: { conversation: '𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓' }
   };
   await conn.sendMessage(m.chat, { text }, { quoted: quotedMsg });
 };
