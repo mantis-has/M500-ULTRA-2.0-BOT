@@ -1,15 +1,14 @@
 const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
+  // Solo admins pueden usarlo
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     return;
   }
-  // Mensaje opcional
   const pesan = args.join(' ');
-  // Nombre de quien usó el comando (admin/invocador)
   const invocador = m.pushName || 'Administrador';
 
-  // Encabezado decorativo
+  // Formato del mensaje
   let teks = `╭─╮︹︹⊹︹︹⊹︹︹⊹︹︹╭─╮
   𝗜𝗡𝗩𝗢𝗖𝗔𝗡𝗗𝗢 𝗚𝗥𝗨𝗣𝗢
 ╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝
@@ -20,14 +19,39 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
 
 ╭─⬣「 ✰𝗠𝗶𝗲𝗺𝗯𝗿𝗼𝘀✰ 」⬣\n`;
 
-  // Mencionar a todos con el patrón pedido
   for (const mem of participants) {
     teks += `│⁖ฺ۟̇࣪·֗٬̤⃟🩵 @${mem.id.split('@')[0]}\n`;
   }
   teks += '╰─⬣';
 
-  // Enviar mensaje con menciones
-  conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)});
+  // Download thumbnail image
+  const thumbnailUrl = 'https://qu.ax/pJCKB.jpg';
+  let jpegThumbnail = null;
+  try {
+    const res = await fetch(thumbnailUrl);
+    jpegThumbnail = await res.buffer();
+  } catch (e) {
+    jpegThumbnail = null;
+  }
+
+  // ID del canal
+  const channelJid = '120363400360651198@newsletter';
+
+  // Enviar mensaje con miniatura y como canal
+  await conn.sendMessage(channelJid, {
+    text: teks,
+    mentions: participants.map(a => a.id),
+    contextInfo: {
+      externalAdReply: {
+        title: '💎 Frases y más 💎',
+        body: 'Invocando al grupo',
+        thumbnail: jpegThumbnail,
+        mediaType: 1,
+        renderLargerThumbnail: true,
+        sourceUrl: '' // Puedes poner una URL si quieres que el mensaje tenga link
+      }
+    }
+  });
 };
 handler.help = ['tagall *<mensaje>*', 'invocar *<mensaje>*'];
 handler.tags = ['grupo'];
