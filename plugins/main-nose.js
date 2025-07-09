@@ -4,9 +4,9 @@
 
 const channelRD = {
   id: "120363400360651198@newsletter", // Cambia por tu canal si quieres
-  name: "MAKIMA - CHANNEL"
+  name: "💎 Frases y más 💎"
 }
-const thumbnailUrl = 'https://qu.ax/dXOUo.jpg' // Imagen cuadrada y pequeña
+const thumbnailUrl = 'https://files.catbox.moe/szodpq.jpg' // Imagen cuadrada y pequeña
 
 let handler = async function (m, { args, command, usedPrefix, conn }) {
   if (!args[0]) {
@@ -25,7 +25,7 @@ let handler = async function (m, { args, command, usedPrefix, conn }) {
       },
       externalAdReply: {
         title: channelRD.name,
-        body: 'MAKIMA 2.0 BOT',
+        body: '𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓',
         thumbnailUrl: thumbnailUrl,
         mediaType: 1,
         renderLargerThumbnail: false,
@@ -35,7 +35,7 @@ let handler = async function (m, { args, command, usedPrefix, conn }) {
     await conn.sendMessage(
       m.chat,
       {
-        text: '「🩵」Debes ingresar un texto para usar este comando.',
+        text: '「💎」Debes ingresar un texto para usar este comando.',
         contextInfo: contextNewsletter
       },
       { quoted: m }
