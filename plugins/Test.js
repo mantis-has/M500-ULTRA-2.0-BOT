@@ -69,7 +69,7 @@ const pinterest = async (m, { conn, text, usedPrefix, command }) => {
 
         const images = data.slice(0, 10).map(img => ({ type: "image", data: { url: img.image_large_url } }));
 
-        const caption = `💎 *Resultados de:* ${text}`;
+        const caption = `💎 𝗥𝗲𝘀𝘂𝗹𝘁𝗮𝗱𝗼𝘀 𝗱𝗲: ${text}`;
         await sendAlbumMessage(m.chat, images, { caption, quoted: m });
 
         await m.react('✅');
