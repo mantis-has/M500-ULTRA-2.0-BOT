@@ -7,9 +7,7 @@ const handler = async (m, { isOwner, isAdmin, conn, participants, args, usedPref
 
   const pesan = args.join(' ');
   const invocador = m.pushName || 'Administrador';
-  const newsletterJid = '120363400360651198@newsletter'; // tu canal
-  const newsletterName = '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄☦︎𝐁ᴏ𝐭⋆͙̈么͟͞──'; // o el nombre que gustes
-  const thumbnailUrl = 'https://qu.ax/pJCKB.jpg';
+  const pp = 'https://qu.ax/pJCKB.jpg'; // FOTO que me diste
 
   let teks = `╭─╮︹︹⊹︹︹⊹︹︹⊹︹︹╭─╮
   𝗜𝗡𝗩𝗢𝗖𝗔𝗡𝗗𝗢 𝗚𝗥𝗨𝗣𝗢
@@ -25,33 +23,8 @@ const handler = async (m, { isOwner, isAdmin, conn, participants, args, usedPref
   }
   teks += '╰─⬣';
 
-  // Descargar la miniatura como buffer
-  let imgBuffer = null;
-  try {
-    imgBuffer = await (await fetch(thumbnailUrl)).buffer();
-  } catch (e) {}
-
-  await conn.sendMessage(m.chat, {
-    text: teks,
-    mentions: participants.map(a => a.id),
-    contextInfo: {
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid,
-        newsletterName,
-        serverMessageId: -1,
-      },
-      forwardingScore: 999,
-      externalAdReply: {
-        title: 'M500 ULTRA BOT',
-        body: 'Invocando al grupo',
-        thumbnail: imgBuffer,
-        mediaType: 1,
-        renderLargerThumbnail: true,
-        sourceUrl: '' // puedes poner un link si quieres
-      }
-    }
-  }, { quoted: m });
+  // Enviar el mensaje como imagen + texto, mencionando a todos
+  await conn.sendFile(m.chat, pp, 'invocando.jpg', teks, m, false, { mentions: participants.map(a => a.id) });
 };
 
 handler.help = ['tagall *<mensaje>*', 'invocar *<mensaje>*'];
