@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
 > 💎 OBTUVISTE ESTOS RECURSOS:
 
 ✨ *Exp*: ${hasil}
-💰 *Makicoins*: ${cookies}
+💰 *coins*: ${cookies}
 💎 *Diamantes*: ${emerald}
 🔩 *Hierro*: ${iron}
 🏅 *Oro*: ${gold}
@@ -28,7 +28,7 @@ let handler = async (m, { conn }) => {
   // ENVÍO DEL MENSAJE COMO REENVIADO DESDE CANAL/NEWSLETTER
   const channelRD = { 
     id: "120363400360651198@newsletter", // <-- Pon aquí el ID de tu canal/newsletter
-    name: "MAKIMA - CHANNEL"              // <-- Pon aquí el nombre del canal/newsletter
+    name: "💎 Frases y más 💎"              // <-- Pon aquí el nombre del canal/newsletter
   }
 
   await conn.sendMessage(m.chat, {
@@ -44,7 +44,7 @@ let handler = async (m, { conn }) => {
       externalAdReply: {
         title: channelRD.name,
         body: 'MAKIMA 2.0 BOT',
-        thumbnailUrl: 'https://qu.ax/tqWBN.jpg', // Cambia la imagen si deseas
+        thumbnailUrl: 'https://files.catbox.moe/szodpq.jpg', // Cambia la imagen si deseas
         mediaType: 1,
         renderLargerThumbnail: true,
         sourceUrl: `https://whatsapp.com/channel/${channelRD.id.replace('@newsletter', '')}`
