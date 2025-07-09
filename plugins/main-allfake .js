@@ -9,7 +9,7 @@ let handler = async (m, { text, conn }) => {
 
 
   if (!text) {
-    return await conn.reply(m.chat, `🩵 Escribe el prompt de la imagen. Ejemplo:\n#dalle2 makima con denji.`, m)
+    return await conn.reply(m.chat, `🩵 Escribe el prompt de la imagen. Ejemplo:\n#dalle2 Bot programador.`, m)
   }
 
   await conn.reply(m.chat, `🩵 Generando la imagen de: "${text}", espera un momento...`, m)
@@ -27,6 +27,6 @@ let handler = async (m, { text, conn }) => {
 
 handler.help = ['imagina <prompt>']
 handler.tags = ['main'];
-handler.command = ['dalle2', 'imagen2']
+handler.command = ['dalle', 'imagen2']
 
 export default handler
