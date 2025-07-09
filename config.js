@@ -48,9 +48,9 @@ global.makiJadibts = true
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
 global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: M500 ULTRA\n\nCreador: Felix Manuel\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
-global.packname = `🩵 M500 ULTRA BOT 🩵`
+global.packname = `⏤͟͞ू⃪  ̸̷͢𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓𑁯ᰍ`
 global.author = `Stickers M500 Ultra`;
-global.wm = '⏤͟͞ू⃪  ̸̷͢𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓𑁯ᰍ';
+global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Félix Manuel';
 global.titulowm = '⏤͟͞ू⃪M500 2.0 𝐁𖹭t͟𑁯ᰍ';
 global.igfg = '𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪'
 global.botname = 'M500 2.0 Ultra Bot'
