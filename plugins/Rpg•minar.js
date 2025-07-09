@@ -43,7 +43,7 @@ let handler = async (m, { conn }) => {
       },
       externalAdReply: {
         title: channelRD.name,
-        body: 'MAKIMA 2.0 BOT',
+        body: '𝐌500 𝐔𝐋𝐓𝐑𝐀 𝐁𝐎𝐓',
         thumbnailUrl: 'https://files.catbox.moe/szodpq.jpg', // Cambia la imagen si deseas
         mediaType: 1,
         renderLargerThumbnail: true,
