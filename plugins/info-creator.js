@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
   let nombreCreator = '💎 C R E A D O R 💎'
   let canal = 'https://wa.me50769062595'
 
-  let numberBot = '50769062595' // Número del bot
+  let numberBot = '18293142989' // Número del bot
   let nombreBot = '⟶꯭̽𝐅𝐞𝐥ɪ꯭ͨ𝐱 ͞ ̵𝆭⎯꯭̽𝐎𝐟𝐜⎯̽―̥𓆩‌۫᷼ ִֶָღܾ݉͢𓆪'
 
   let numberYoSoyYo = '50769062595'
