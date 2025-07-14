@@ -24,7 +24,7 @@ let handler = async (m, { conn, args }) => {
 ¡𝐇𝐨𝐥𝐚! ${name} 𝐒𝐨𝐲 𝐌500-𝐔𝐥𝐭𝐫𝐚-𝐁𝐨𝐭 ${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(Sub-Bot)')}
 
 ╔━━ INFO-BOT ━━━━╗
-┃Creador: Félix Manuel 
+┃Creador: ⟶꯭̽𓆩‌۫᷼ ִֶָღܾ݉͢𝐄𝐳𝐞𝐪𝐮𝐢𝐞𝐥𓆪
 ┃Tiempo activo: ${uptime}
 ┃Comandos: ${totalCommands}
 ┃Registros: ${totalreg}
@@ -246,7 +246,7 @@ let handler = async (m, { conn, args }) => {
 │⁖ฺ۟̇࣪·֗٬̤⃟💎 #broadcast
 ╰─⬣
 
-> © Desarrollado por Félix Manuel.
+> © Powered by ⟶꯭̽𓆩‌۫᷼ ִֶָღܾ݉͢𝐄𝐳𝐞𝐪𝐮𝐢𝐞𝐥𓆪
 `.trim();
 
   let imgBuffer = await fetch(imgUrl).then(res => res.buffer());  
